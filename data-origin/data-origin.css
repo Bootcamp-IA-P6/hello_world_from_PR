@@ -39,14 +39,22 @@ h2 {
 .origin-card {
   background-color: #fff;
   border-radius: 12px;
+<<<<<<< HEAD
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+=======
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+>>>>>>> feature/metadatos-y-procedencia
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .origin-card:hover {
   transform: translateY(-5px);
+<<<<<<< HEAD
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+=======
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+>>>>>>> feature/metadatos-y-procedencia
 }
 
 .origin-card img {
