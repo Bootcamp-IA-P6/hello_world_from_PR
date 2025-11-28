@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orígenes de la IA</title>
+  <title>Limpieza y Transformación de Datos</title>
   <link rel="stylesheet" href="data-cleaning.css" />
 </head>
 <body>
-<section id="origenes" class="content-section">
-  <h2>El arte de preparar y refinar el dato</h2>
+<section id="limpieza" class="content-section">
+  <h2>Limpieza & Transformación</h2>
 
   <p class="intro">
-    Mucho antes de poder entrenar un algoritmo inteligente, los datos deben someterse a un riguroso proceso de transformación. 
-    Desde la limpieza de impurezas hasta la ingeniería de características, esta fase invisible constituye los cimientos reales sobre los que se construye cualquier proyecto de Ciencia de Datos exitoso.
+    Es el proceso de detectar y corregir errores en un conjunto de datos. Esto incluye eliminar duplicados, rellenar o manejar valores faltantes, 
+    corregir formatos inconsistentes y quitar información incorrecta. Su objetivo es dejar los datos claros, precisos y confiables.
   </p>
 
   <div class="card-grid">
+    
+    <!-- CARD 1: DATA WRANGLING -->
     <div class="origin-card">
       <img src="../assets/data-cleaning/dw-dc.jpg" alt="Proceso de limpieza de datos" />
       <div class="card-content">
@@ -23,349 +25,66 @@
         <h3>Data Wrangling y Calidad</h3>
         <p>
           El Data Wrangling consiste en transformar y limpiar datos crudos para hacerlos utilizables. 
-          Sin una buena calidad de datos, se aplica el principio "Garbage In, Garbage Out": si entran datos malos, el análisis fallará.
+          Sin una buena calidad de datos, se aplica el principio "Garbage In, Garbage Out".
         </p>
       </div>
     </div>
 
+    <!-- CARD 2: OUTLIERS (Corregido '1600s' a 'Depuración') -->
     <div class="origin-card">
-      <img src="../assets/examples/leibniz.png" alt="Leibniz" />
+      <img src="../assets/data-cleaning/outliers.png" alt="Outliers" />
       <div class="card-content">
-        <span class="year">1600s</span>
-        <h3>Leibniz y el cálculo lógico</h3>
+        <span class="year">Depuración</span>
+        <h3>Manejo de valores nulos y outliers</h3>
         <p>
-          Gottfried Wilhelm Leibniz soñó con crear una “máquina de razonamiento” que pudiera realizar deducciones lógicas, 
-          anticipando la noción de una computadora simbólica.
+          También se llama depuración de datos. Es el proceso de identificar y corregir errores e incongruencias 
+          para garantizar que sean precisos, coherentes y utilizables.
         </p>
       </div>
     </div>
 
+    <!-- CARD 3: ETL/ELT -->
     <div class="origin-card">
-      <img src="../assets/examples/georgeBoole.png" alt="George Boole" />
+      <img src="../assets/data-cleaning/etl-elt-pipeline.webp" alt="etl-elt-pipeline" />
       <div class="card-content">
-        <span class="year">1800s</span>
-        <h3>George Boole y el álgebra booleana</h3>
+        <span class="year">Data Cleaning</span>
+        <h3>ETL/ELT y Pipelines de Datos</h3>
         <p>
-          Boole formalizó la lógica con operaciones matemáticas que más tarde permitirían el desarrollo de circuitos digitales y lenguajes de programación.
+          ETL y ELT son procesos para mover y preparar datos. Un pipeline es la secuencia automatizada 
+          que siguen los datos desde su origen hasta su destino, asegurando que lleguen listos para usarse.
         </p>
       </div>
     </div>
 
+    <!-- CARD 4: FEATURE ENGINEERING -->
     <div class="origin-card">
-      <img src="../assets/examples/alanTuring.png" alt="Alan Turing" />
+      <img src="../assets/data-cleaning/engineering.png" alt="Feature Engineering" />
       <div class="card-content">
-        <span class="year">1930s</span>
-        <h3>Alan Turing y las bases de la computación</h3>
+        <span class="year">Ingeniería</span>
+        <h3>Feature Engineering</h3>
         <p>
-          Turing propuso la idea de una máquina capaz de ejecutar cualquier proceso lógico. 
-          Su modelo teórico marcó el inicio del pensamiento algorítmico que haría posible la IA.
+          Proceso de crear, transformar y seleccionar características (features) relevantes a partir de los datos brutos. 
+          Esta etapa es crucial para mejorar el rendimiento de los modelos.
         </p>
-      </div>    
+      </div>
+    </div>
+
+    <!-- CARD 5: EDA (Exploratory Data Analysis) -->
+    <div class="origin-card">
+      <img src="../assets/data-cleaning/DataCleaning.png" alt="EDA" />
+      <div class="card-content">
+        <span class="year">Análisis</span>
+        <h3>Exploratory Data Analysis (EDA)</h3>
+        <p>
+          Exploratory data analysis helps you understand the structure, patterns, and anomalies in a dataset 
+          before building models or drawing conclusions.
+        </p>
+      </div>
     </div>
   </div>
 
   <blockquote class="inspiration">
     “Los datos son el nuevo petróleo. Son valiosos, pero si no se refinan, no pueden utilizarse realmente.” — Clive Humby
-  </blockquote>
-</section>
-</body>
-</html><!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Limpieza de Datos</title>
-  <link rel="stylesheet" href="data-cleaning.css" />
-</head>
-<body>
-<section id="data-cleaning" class="content-section">
-  <h2>Orígenes matemáticos y filosóficos de la IA</h2>
-
-  <p class="intro">
-    Mucho antes de que existieran las computadoras modernas, filósofos y matemáticos ya se preguntaban si el pensamiento podía describirse mediante reglas lógicas. 
-    Estas ideas sentaron las bases de lo que hoy conocemos como Inteligencia Artificial.
-  </p>
-
-  <div class="card-grid">
-    <div class="origin-card">
-      <img src="../assets/examples/aristoteles.png" alt="Aristóteles" />
-      <div class="card-content">
-        <span class="year">384 a.C.</span>
-        <h3>Aristóteles y la lógica formal</h3>
-        <p>
-          Aristóteles fue uno de los primeros en intentar sistematizar el razonamiento humano mediante reglas lógicas. 
-          Sus ideas inspiraron siglos después el concepto de razonamiento computacional.
-        </p>
-      </div>
-    </div>
-
-    <div class="origin-card">
-      <img src="../assets/examples/leibniz.png" alt="Leibniz" />
-      <div class="card-content">
-        <span class="year">1600s</span>
-        <h3>Leibniz y el cálculo lógico</h3>
-        <p>
-          Gottfried Wilhelm Leibniz soñó con crear una "máquina de razonamiento" que pudiera realizar deducciones lógicas, 
-          anticipando la noción de una computadora simbólica.
-        </p>
-      </div>
-    </div>
-
-    <div class="origin-card">
-      <img src="../assets/examples/georgeBoole.png" alt="George Boole" />
-      <div class="card-content">
-        <span class="year">1800s</span>
-        <h3>George Boole y el álgebra booleana</h3>
-        <p>
-          Boole formalizó la lógica con operaciones matemáticas que más tarde permitirían el desarrollo de circuitos digitales y lenguajes de programación.
-        </p>
-      </div>
-    </div>
-
-    <div class="origin-card">
-      <img src="../assets/data-cleaning/engineering.png" alt="Feature Engineering" />
-      <div class="card-content">
-        <span class="year">Moderno</span>
-        <h3>Feature Engineering</h3>
-        <p>
-          Proceso de crear, transformar y seleccionar características (features) relevantes a partir de los datos brutos. 
-          Esta etapa es crucial para mejorar el rendimiento de los modelos de machine learning.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <blockquote class="inspiration">
-    "Podemos considerar que el razonamiento es una forma de cálculo." — Leibniz
-  </blockquote>
-</section>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orígenes de la IA</title>
-    <link rel="stylesheet" href="data-cleaning.css" />
-</head>
-
-<body>
-    <section id="origenes" class="content-section">
-        <h2>Limpieza & Transformación</h2>
-
-        <p class="intro">
-            Es el proceso de detectar y corregir errores en un conjunto de datos. Esto incluye eliminar duplicados, rellenar o manejar valores faltantes, corregir formatos inconsistentes y quitar información incorrecta o irrelevante.
-            Su objetivo es dejar los datos claros, precisos y confiables para poder analizarlos correctamente o usarlos en modelos y reportes.
-        </p>
-
-        <div class="card-grid">
-            <div class="origin-card">
-                <img src="../assets/examples/aristoteles.png" alt="Aristóteles" />
-                <div class="card-content">
-                    <span class="year">384 a.C.</span>
-                    <h3>Aristóteles y la lógica formal</h3>
-                    <p>
-                        Aristóteles fue uno de los primeros en intentar sistematizar el razonamiento humano mediante
-                        reglas lógicas.
-                        Sus ideas inspiraron siglos después el concepto de razonamiento computacional.
-                    </p>
-                </div>
-            </div>
-
-            <div class="origin-card">
-                <img src="../assets/examples/leibniz.png" alt="Leibniz" />
-                <div class="card-content">
-                    <span class="year">1600s</span>
-                    <h3>Leibniz y el cálculo lógico</h3>
-                    <p>
-                        Gottfried Wilhelm Leibniz soñó con crear una “máquina de razonamiento” que pudiera realizar
-                        deducciones lógicas,
-                        anticipando la noción de una computadora simbólica.
-                    </p>
-                </div>
-            </div>
-
-            <div class="origin-card">
-                <img src="../assets/data-cleaning/etl-elt-pipeline.webp" alt="etl-elt-pipeline" />
-                <div class="card-content">
-                    <span class="year">Data Cleaning</span>
-                    <h3>ETL/ELT y Pipelines de Datos</h3>
-                    <p>
-                        ETL y ELT son procesos que permiten mover y preparar datos. En ETL, los datos se extraen, se transforman y luego se cargan en un sistema final. En ELT, los datos se cargan primero y las transformaciones se hacen después dentro del sistema destino. Un pipeline de datos es la secuencia automatizada de pasos que siguen los datos desde su origen hasta su destino, asegurando que lleguen limpios, ordenados y listos para usarse.
-                    </p>
-                </div>
-            </div>
-
-            <div class="origin-card">
-                <img src="../assets/examples/alanTuring.png" alt="Alan Turing" />
-                <div class="card-content">
-                    <span class="year">1930s</span>
-                    <h3>Alan Turing y las bases de la computación</h3>
-                    <p>
-                        Turing propuso la idea de una máquina capaz de ejecutar cualquier proceso lógico.
-                        Su modelo teórico marcó el inicio del pensamiento algorítmico que haría posible la IA.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <blockquote class="inspiration">
-            “Podemos considerar que el razonamiento es una forma de cálculo.” — Leibniz
-        </blockquote>
-    </section>
-</body>
-
-</html><!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orígenes de la IA</title>
-  <link rel="stylesheet" href="data-cleaning.css" />
-</head>
-<body>
-<section id="origenes" class="content-section">
-  <h2>Orígenes matemáticos y filosóficos de la IA</h2>
-
-  <p class="intro">
-    Mucho antes de que existieran las computadoras modernas, filósofos y matemáticos ya se preguntaban si el pensamiento podía describirse mediante reglas lógicas. 
-    Estas ideas sentaron las bases de lo que hoy conocemos como Inteligencia Artificial.
-  </p>
-
-  <div class="card-grid">
-    <div class="origin-card">
-      <img src="../assets/examples/aristoteles.png" alt="Aristóteles" />
-      <div class="card-content">
-        <span class="year">384 a.C.</span>
-        <h3>Aristóteles y la lógica formal</h3>
-        <p>
-          Aristóteles fue uno de los primeros en intentar sistematizar el razonamiento humano mediante reglas lógicas. 
-          Sus ideas inspiraron siglos después el concepto de razonamiento computacional.
-        </p>
-      </div>
-    </div>
-
-    <div class="origin-card">
-      <img src="../assets/data-cleaning/outliers.png" alt="Outliers" />
-      <div class="card-content">
-        <span class="year">1600s</span>
-        <h3>Manejo de valores nulos y outliers</h3>
-        <p>
-          También se llama depuracion de datos y es el proceso de identificar y corregir errores e incongruencias en conjuntos de datos sin procesar para 
-         mejorar la calidad de los datos con el objetivo de garantizar que sean precisos, coherentes, completos y utilizables para analisis o toma de decisiones.
-        </p>
-      </div>
-    </div>
-
-    <div class="origin-card">
-      <img src="../assets/examples/georgeBoole.png" alt="George Boole" />
-      <div class="card-content">
-        <span class="year">1800s</span>
-        <h3>George Boole y el álgebra booleana</h3>
-        <p>
-          Boole formalizó la lógica con operaciones matemáticas que más tarde permitirían el desarrollo de circuitos digitales y lenguajes de programación.
-        </p>
-      </div>
-    </div>
-
-    <div class="origin-card">
-      <img src="../assets/examples/alanTuring.png" alt="Alan Turing" />
-      <div class="card-content">
-        <span class="year">1930s</span>
-        <h3>Alan Turing y las bases de la computación</h3>
-        <p>
-          Turing propuso la idea de una máquina capaz de ejecutar cualquier proceso lógico. 
-          Su modelo teórico marcó el inicio del pensamiento algorítmico que haría posible la IA.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <blockquote class="inspiration">
-    “Podemos considerar que el razonamiento es una forma de cálculo.” — Leibniz
-  </blockquote>
-</section>
-</body>
-</html><!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orígenes de la IA</title>
-  <link rel="stylesheet" href="data-cleaning.css" />
-</head>
-<body>
-<section id="origenes" class="content-section">
-  <h2>Orígenes matemáticos y filosóficos de la IA</h2>
-
-  <p class="intro">
-    Mucho antes de que existieran las computadoras modernas, filósofos y matemáticos ya se preguntaban si el pensamiento podía describirse mediante reglas lógicas. 
-    Estas ideas sentaron las bases de lo que hoy conocemos como Inteligencia Artificial.
-  </p>
-
-  <div class="card-grid">
-    <div class="origin-card">
-      <img src="../assets/examples/aristoteles.png" alt="Aristóteles" />
-      <div class="card-content">
-        <span class="year">384 a.C.</span>
-        <h3>Aristóteles y la lógica formal</h3>
-        <p>
-          Aristóteles fue uno de los primeros en intentar sistematizar el razonamiento humano mediante reglas lógicas. 
-          Sus ideas inspiraron siglos después el concepto de razonamiento computacional.
-        </p>
-      </div>
-    </div>
-
-    <div class="origin-card">
-      <img src="../assets/examples/leibniz.png" alt="Leibniz" />
-      <div class="card-content">
-        <span class="year">1600s</span>
-        <h3>Leibniz y el cálculo lógico</h3>
-        <p>
-          Gottfried Wilhelm Leibniz soñó con crear una “máquina de razonamiento” que pudiera realizar deducciones lógicas, 
-          anticipando la noción de una computadora simbólica.
-        </p>
-      </div>
-    </div>
-
-    <div class="origin-card">
-      <img src="../assets/examples/georgeBoole.png" alt="George Boole" />
-      <div class="card-content">
-        <span class="year">1800s</span>
-        <h3>George Boole y el álgebra booleana</h3>
-        <p>
-          Boole formalizó la lógica con operaciones matemáticas que más tarde permitirían el desarrollo de circuitos digitales y lenguajes de programación.
-        </p>
-      </div>
-    </div>
-
-    <div class="origin-card">
-      <img src="../assets/examples/alanTuring.png" alt="Alan Turing" />
-      <div class="card-content">
-        <span class="year">1930s</span>
-        <h3>Alan Turing y las bases de la computación</h3>
-        <p>
-          Turing propuso la idea de una máquina capaz de ejecutar cualquier proceso lógico. 
-          Su modelo teórico marcó el inicio del pensamiento algorítmico que haría posible la IA.
-        </p>
-      </div>
-    </div>
-    <div class="origin-card">
-      <img src="../assets/data-cleaning/DataCleaning.png" alt="Leibniz" />
-      <div class="card-content">
-        <span class="year">2025</span>
-        <h3>Exploratoy and Data Analysis </h3>
-        <p>
-          Exploratory data analysis helps you understand the structure, patterns, and anomalies in a dataset before building models or drawing conclusions..
-        </p>
-      </div>
-    </div>
-  </div>
- 
-  <blockquote class="inspiration">
-    “Podemos considerar que el razonamiento es una forma de cálculo.” — Leibniz
   </blockquote>
 </section>
 </body>
