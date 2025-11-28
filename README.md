@@ -99,8 +99,8 @@ El sitio abordará los **5 Pilares del Ciclo de Vida del Dato**, cada uno desarr
 ### 1️⃣ Clonar el repositorio base
 
 ```bash
-git clone https://github.com/[nombre-organizacion]/data-journey.git
-cd data-journey
+git clone https://github.com/Bootcamp-IA-P6/hello_world_from_PR.git
+cd hello_world_from_PR
 ```
 
 ### 2️⃣ Crear una nueva rama por equipo
